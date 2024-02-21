@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  min-height: 100vh; 
+  max-width: 100%;
   background: linear-gradient(to bottom, #262626, #434343);
 }
 

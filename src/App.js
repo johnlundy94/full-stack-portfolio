@@ -1,10 +1,14 @@
-import Hero from "./components/Hero";
 import "./App.css";
+import { ThemeProvider } from "@mui/material/styles";
+import muiTheme from "./muiTheme";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <ThemeProvider theme={muiTheme}>
+        <Home />
+      </ThemeProvider>
     </div>
   );
 }
