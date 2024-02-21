@@ -14,7 +14,11 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import "./Nav.css";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = [
+  { name: "Experience", path: "/#experience" },
+  { name: "Projects", path: "/#projects" },
+  { name: "Contact", path: "/#contact" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Nav() {
@@ -89,8 +93,10 @@ function Nav() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Button href={page.path}>{page.name}</Button>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,11 +123,13 @@ function Nav() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
+                href={page.path}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <a></a>
+                {page.name}
               </Button>
             ))}
           </Box>
