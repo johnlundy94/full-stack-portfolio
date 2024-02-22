@@ -128,7 +128,6 @@ function Nav() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <a></a>
                 {page.name}
               </Button>
             ))}

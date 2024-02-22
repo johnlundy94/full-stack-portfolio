@@ -7,9 +7,9 @@ function Hero() {
       <img src={Headshot} alt="clipart-headshot" className="headshot" />
       <h1 className="hero-title">Hello, I'm John!</h1>
       <div className="links">
-        <a>Projects</a>
-        <a>Experience</a>
-        <a>Contact</a>
+        <a href={"/#projects"}>Projects</a>
+        <a href={"/#experience"}>Experience</a>
+        <a href={"/#contact"}>Contact</a>
       </div>
       <p className="hero-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
