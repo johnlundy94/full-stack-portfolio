@@ -1,9 +1,13 @@
 import "./Hero.css";
+import Headshot from "./clipart-headshot.png";
 
 function Hero() {
   return (
     <div className="hero-container">
-      <h1>Hero</h1>
+      <img src={Headshot} alt="clipart-headshot" className="headshot" />
+      <div className="hero-text">
+        <h1>Hero</h1>
+      </div>
     </div>
   );
 }
