@@ -58,10 +58,10 @@ const BasicMenu = ({ github, website }) => {
 const Cards = ({ title, description, imageSrc, github, website }) => {
   return (
     <div className="project-card">
-      <img src={imageSrc} alt={title} className="project-image" />
       <div className="menu-container">
         <BasicMenu github={github} website={website} />
       </div>
+      <img src={imageSrc} alt={title} className="project-image" />
       <div className="project-description">
         <h1>{title}</h1>
         <p className="project-text">{description}</p>

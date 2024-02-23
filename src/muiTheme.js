@@ -17,7 +17,7 @@ const muiTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "#80d9ef",
+          color: "#e0f6fc",
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
@@ -35,7 +35,7 @@ const muiTheme = createTheme({
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          color: "#80d9ef",
+          color: "#e0f6fc",
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
