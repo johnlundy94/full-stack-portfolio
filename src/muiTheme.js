@@ -16,15 +16,29 @@ const muiTheme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        text: {
-          color: "#fbfbfb",
+        root: {
+          color: "#80d9ef",
+          fontFamily: '"Anta", sans-serif',
+          fontWeight: "400",
+          fontStyle: "normal",
+          backgroundColor: "rgba(24, 181, 215, 0.5)",
         },
       },
     },
     MuiMenu: {
       styleOverrides: {
         paper: {
-          backgroundColor: "#272727",
+          backgroundColor: "rgba(24, 181, 215, 0.5)",
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          color: "#80d9ef",
+          fontFamily: '"Anta", sans-serif',
+          fontWeight: "400",
+          fontStyle: "normal",
         },
       },
     },

@@ -1,8 +1,4 @@
 import "./Projects.css";
-import vvl from "./vvl.png";
-import calorieCounter from "./calorie-counter.png";
-import littleLemon from "./little-lemon.png";
-import { Link } from "@mui/material";
 import Cards from "../../ProjectCard/ProjectCards";
 
 const projects = [

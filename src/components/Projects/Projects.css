@@ -6,23 +6,22 @@
     max-width: 100%;
   }
 
-  .img1{
+  .project-image{
     grid-row: 2;
     width: 100%; 
     height: auto;
   }
 
-  .img2{
-    grid-row: 4;
-    width: 100%; 
-    height: auto;
+  .project-card {
+    position: relative;
   }
 
-  .img3{
-    grid-row: 6;
-    width: 100%; 
-    height: auto;
-  }
+  .menu-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    z-index: 10; 
+  }  
 
   .project-description{
     text-align: left;
