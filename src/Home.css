@@ -1,6 +1,7 @@
 .Home {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
     place-content: center;
     transition: all 0.3s ease-in-out;
     background-image: url('./assets/portfolio-background.png'); 

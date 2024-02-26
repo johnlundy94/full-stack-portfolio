@@ -21,14 +21,14 @@ const muiTheme = createTheme({
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
-          backgroundColor: "rgba(24, 181, 215, 0.5)",
+          backgroundColor: "rgba(0, 90, 101, 0.5)",
         },
       },
     },
     MuiMenu: {
       styleOverrides: {
         paper: {
-          backgroundColor: "rgba(24, 181, 215, 0.5)",
+          backgroundColor: "rgba(0, 90, 101, 0.5)",
         },
       },
     },

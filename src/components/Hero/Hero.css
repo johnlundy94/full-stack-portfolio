@@ -44,7 +44,7 @@
   grid-row: 3 / span 2;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(24, 181, 215, 0.5); 
+  background-color: rgba(0, 90, 101, 0.5); 
   padding: 1rem;
   border-radius: 8px; 
 }
