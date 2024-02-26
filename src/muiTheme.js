@@ -42,9 +42,21 @@ const muiTheme = createTheme({
         },
       },
     },
-  },
-  typography: {
-    fontFamily: "Poppins, sans-serif",
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          "& .MuiOutlinedInput-notchedOutline": {
+            borderColor: "#80d9ef",
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "#80d9ef",
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "#80d9ef",
+          },
+        },
+      },
+    },
   },
 });
 

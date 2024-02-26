@@ -117,9 +117,16 @@ function Contact() {
           </DialogContentText>
         </DialogContent>
       </Dialog>
-      <h1 className="quote-title">Let's Chat</h1>
-      <div className="quote-form">
-        <FormControl component="form" onSubmit={handleSubmit} sx={{ m: 4 }}>
+      <h1 className="contact-title">Let's Chat</h1>
+      <div className="contact-form">
+        <FormControl
+          component="form"
+          onSubmit={handleSubmit}
+          sx={{ m: 4 }}
+          margin="normal"
+          fullWidth
+          className="form-control"
+        >
           <TextField
             label="Name"
             variant="outlined"
@@ -130,6 +137,7 @@ function Contact() {
             helperText={formErrors.name}
             margin="normal"
             fullWidth
+            className="text-field"
           />
           <TextField
             label="Email"
