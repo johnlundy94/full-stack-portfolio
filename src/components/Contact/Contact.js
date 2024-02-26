@@ -1,9 +1,153 @@
 import "./Contact.css";
+import {
+  Dialog,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Button,
+  FormControl,
+  TextField,
+} from "@mui/material";
+import { useState } from "react";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    description: "",
+  });
+
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    description: "",
+  });
+
+  const [openDialog, setOpenDialog] = useState(false);
+
+  const validateEmail = (email) => {
+    const regEmial =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regEmial.test(email);
+  };
+
+  const validateField = (name, value) => {
+    switch (name) {
+      case "email":
+        return validateEmail(value) ? "" : "Invalid email format";
+      default:
+        return value.trim() ? "" : "This field is required";
+    }
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: validateField(name, value),
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newErrors = Object.keys(formData).reduce((acc, key) => {
+      if (key !== "services") {
+        acc[key] = validateField(key, formData[key]);
+      }
+      return acc;
+    }, {});
+
+    setFormErrors(newErrors);
+
+    const hasErrors = Object.values(newErrors).some((error) => error);
+    if (hasErrors) {
+      console.log("Form has errors");
+      return;
+    }
+
+    console.log(formData);
+    setOpenDialog(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      description: "",
+    });
+  };
+
   return (
-    <div className="contact-container" id="contact">
-      <h1>Contact</h1>
+    <div className="contact-container">
+      <Dialog
+        open={openDialog}
+        onClose={() => setOpenDialog(false)}
+        aria-labelledby="alert-dialog-text"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"Submission Successful"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            Thank you for your interest! I will reach out shortly!
+          </DialogContentText>
+        </DialogContent>
+      </Dialog>
+      <h1 className="quote-title">Let's Chat</h1>
+      <div className="quote-form">
+        <FormControl component="form" onSubmit={handleSubmit} sx={{ m: 4 }}>
+          <TextField
+            label="Name"
+            variant="outlined"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            error={!!formErrors.name}
+            helperText={formErrors.name}
+            margin="normal"
+            fullWidth
+          />
+          <TextField
+            label="Email"
+            variant="outlined"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            error={!!formErrors.email}
+            helperText={formErrors.email}
+            margin="normal"
+            fullWidth
+          />
+          <TextField
+            label="What would you like to talk about?"
+            variant="outlined"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            error={!!formErrors.description}
+            helperText={formErrors.description}
+            multiline
+            rows={4}
+            margin="normal"
+            fullWidth
+            className="description-textfield"
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            sx={{ mt: 2 }}
+          >
+            Submit
+          </Button>
+        </FormControl>
+      </div>
     </div>
   );
 }
