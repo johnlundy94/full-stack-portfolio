@@ -9,6 +9,7 @@ import {
   TextField,
 } from "@mui/material";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -73,6 +74,23 @@ function Contact() {
     }
 
     console.log(formData);
+
+    emailjs
+      .send(
+        "service_afufhpp",
+        "template_i404btv",
+        {
+          to_email: "johnclundyy@gmail.com",
+          from_name: formData.name,
+          from_email: formData.email,
+          comment: formData.description,
+        },
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then((error) => {
+        console.error("Email sending failed:", error.text);
+      });
+
     setOpenDialog(true);
 
     setFormData({
