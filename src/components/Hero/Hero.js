@@ -14,7 +14,7 @@ function Hero() {
       <p className="hero-text">
         Driven to blend form and function, I craft full-stack solutions with a
         heart. Javascript, React, and cloud services aren't just tools- they're
-        my palette for creating web experiences that resoate and endure.
+        my palette for creating web experiences that resonate and endure.
       </p>
     </div>
   );
