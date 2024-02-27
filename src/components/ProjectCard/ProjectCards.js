@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import "../components/Projects/Projects.css";
+import "../Projects/Projects.css";
 
 const BasicMenu = ({ github, website }) => {
   const [anchorEl, setAnchorEl] = useState(null);

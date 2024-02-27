@@ -4,9 +4,4 @@
     grid-template-rows: repeat(5, auto);
     place-content: center;
     transition: all 0.3s ease-in-out;
-    background-image: url('./assets/portfolio-background.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }

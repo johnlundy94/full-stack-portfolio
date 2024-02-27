@@ -3,39 +3,45 @@ import { createTheme } from "@mui/material/styles";
 const muiTheme = createTheme({
   palette: {
     primary: {
-      main: "#18b5d7",
+      main: "#00203F",
       light: "#4d4d4d",
-      dark: "#1c1c1c",
-      contrastText: "#fbfbfb",
+      contrastText: "#fe4f25",
     },
     text: {
-      primary: "#e0f6fc",
-      secondary: "#fbfbfb",
+      primary: "#ADEFD1",
+      secondary: "#fe4f25",
     },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "#e0f6fc",
+          color: "#def9ed",
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
-          backgroundColor: "rgba(0, 90, 101, 0.5)",
+          backgroundColor: "rgba(0, 32, 63, 0.7)",
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          color: "#def9ed",
         },
       },
     },
     MuiMenu: {
       styleOverrides: {
         paper: {
-          backgroundColor: "rgba(0, 90, 101, 0.5)",
+          backgroundColor: "rgba(0, 32, 63, 0.7)",
         },
       },
     },
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          color: "#e0f6fc",
+          color: "#def9ed",
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
@@ -46,13 +52,13 @@ const muiTheme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#80d9ef",
+            borderColor: "#ADEFD1",
           },
           "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#80d9ef",
+            borderColor: "#ADEFD1",
           },
           "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#80d9ef",
+            borderColor: "#ADEFD1",
           },
         },
       },

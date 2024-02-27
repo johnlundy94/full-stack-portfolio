@@ -1,5 +1,5 @@
 import "./Projects.css";
-import Cards from "../../ProjectCard/ProjectCards";
+import Cards from "../ProjectCard/ProjectCards";
 
 const projects = [
   {
@@ -34,7 +34,7 @@ const projects = [
 function Projects() {
   return (
     <div className="projects-container" id="projects">
-      <h1>Projects</h1>
+      <h1 className="projects-title">Projects</h1>
       {projects.map((project) => (
         <Cards
           key={project.title}
