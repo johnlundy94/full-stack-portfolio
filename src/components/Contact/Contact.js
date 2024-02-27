@@ -73,8 +73,6 @@ function Contact() {
       return;
     }
 
-    console.log(formData);
-
     emailjs
       .send(
         "service_afufhpp",
