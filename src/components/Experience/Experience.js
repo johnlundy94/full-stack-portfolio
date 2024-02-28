@@ -5,14 +5,23 @@ function Experience() {
     <div className="experience-container" id="experience">
       <div className="skills-content">
         <h1 className="skills-title">Skills</h1>
-        <p className="p-title">PROGRAMMING LANGUAGES</p>
-        <p className="p-content">JavaScript</p>
-        <p className="p-title">WEB TECHNOLOGIES</p>
-        <p className="p-content">UX/UI, CSS, React, SQL, NoSQL, Web APIs</p>
-        <p className="p-title">TESTING</p>
-        <p className="p-content">Unit Testing, Integration Testing</p>
-        <p className="p-title">OTHER</p>
-        <p className="p-content">Git, Firebase, AWS Backend Technologies</p>
+        <p className="p-title">Front-end</p>
+        <p className="p-content">
+          React (Hooks, Redux), JavaScript (ES6+), UI/UX Design, Chakra UI,
+          Emotion, Material-UI
+        </p>
+        <p className="p-title">Back-end</p>
+        <p className="p-content">
+          AWS Services (SDK), Firebase (Auth, Database)
+        </p>
+        <p className="p-title">Testing</p>
+        <p className="p-content">
+          Jest, React Testing Library, Integration Testing
+        </p>
+        <p className="p-title">Tools</p>
+        <p className="p-content">
+          Git, Chart.js, Formik, Yup, npm, webpack, ESLint
+        </p>
       </div>
 
       <div className="education-content">

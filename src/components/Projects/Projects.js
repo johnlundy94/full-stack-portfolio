@@ -6,28 +6,28 @@ const projects = [
     id: 1,
     title: "Verdant Vision Landscaping",
     description:
-      "The transformation of our backyard was nothing short of magical. Alex and his team at Verdant Valley Landscaping worked with us to create a sustainable oasis. Their attention to detail and dedication to eco-friendly practices were evident. Our garden is now not only beautiful but also a haven for local wildlife. We couldn't be happier!",
+      "A sleek, AWS-powered interface for landscape services, offering design visualization and appointment scheduling. Demonstrates expertise in cloud solutions, serverless architecture, and database scalability.",
     getImageSrc: () => require("./vvl.png"),
     github: "https://github.com/johnlundy94/landscape",
-    website: "https://main.d2tfrzc9xc7mg4.amplifyapp.com/",
+    website: "https://www.verdantvisionslandscaping.com/",
   },
   {
     id: 2,
     title: "Calorie Counter",
     description:
-      "We tasked Verdant Valley with the challenge of designing a low-maintenance yet elegant landscape for our front yard. They exceeded our expectations! The design was thoughtful, and the execution was flawless. Our neighbors are constantly complimenting us on the improvement. Thank you, Verdant Valley!",
+      "A user-friendly app providing tailored nutritional tracking, with Firebase-backend authentication and live data updates. Simplifies daily calorie management through an intuitive questionnaire-based setup.",
     getImageSrc: () => require("./calorie-counter.png"),
     github: "https://github.com/johnlundy94/calorie_counter",
-    website: "https://johns-calorie-counter.netlify.app/",
+    website: "https://www.johnscaloriecounter.com/",
   },
   {
     id: 3,
     title: "Little Lemon",
     description:
-      "Choosing Verdant Valley Landscaping for our property overhaul was the best decision we could have made. Alex's vision for our outdoor space has added immense value to our property. The team's professionalism and skill were unparalleled, and the result is a stunning, serene space that we enjoy every day",
+      "Merges appealing design with a reliable reservations system, ensuring seamless user experiences and precision in booking management to prevent overlaps.",
     getImageSrc: () => require("./little-lemon.png"),
     github: "https://github.com/johnlundy94/little_lemon",
-    website: "https://johns-little-lemon.netlify.app/",
+    website: "https://www.johnlittlelemon.com/",
   },
 ];
 
