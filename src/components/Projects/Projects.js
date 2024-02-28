@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "Verdant Vision Landscaping",
     description:
-      "A sleek, AWS-powered interface for landscape services, offering design visualization and appointment scheduling. Demonstrates expertise in cloud solutions, serverless architecture, and database scalability.",
+      "A sleek, AWS-powered interface for landscape services, offering design visualization and quote submission. Demonstrates expertise in cloud solutions, serverless architecture, and database scalability.",
     getImageSrc: () => require("./vvl.png"),
     github: "https://github.com/johnlundy94/landscape",
     website: "https://www.verdantvisionslandscaping.com/",
