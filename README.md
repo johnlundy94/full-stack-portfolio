@@ -2,7 +2,7 @@
 
 ## Description
 
-My Portfolio is a comprehensive showcase of my expertise in full-stack development. It features a range of projects highlighting coding proficiency, problem-solving abilities, and design skills. This portfolio serves as a gateway to my professional work, showcasing applications and solutions developed using modern web technologies.
+A comprehensive showcase of my expertise in full-stack development. It features a range of projects highlighting coding proficiency, problem-solving abilities, and design skills. This portfolio serves as a gateway to my professional work, showcasing applications and solutions developed using modern web technologies.
 
 ## Usage
 
