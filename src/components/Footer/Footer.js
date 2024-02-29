@@ -11,36 +11,19 @@ function Footer() {
       <div className="footer-links">
         <Button
           href="#experience"
-          style={{ textDecoration: "none", color: "#fbfbfb", padding: 10 }}
+          style={{ textDecoration: "none", padding: 10 }}
         >
           Experience
         </Button>
         <Button
           href="#projects"
-          style={{ textDecoration: "none", color: "#fbfbfb", padding: 10 }}
+          style={{ textDecoration: "none", padding: 10 }}
         >
           Projects
         </Button>
-        <Button
-          href="#contact"
-          style={{ textDecoration: "none", color: "#fbfbfb", padding: 10 }}
-        >
+        <Button href="#contact" style={{ textDecoration: "none", padding: 10 }}>
           Contact
         </Button>
-      </div>
-      <div className="footer-social">
-        <IconButton color="#fbfbfb" href="https://facebook.com">
-          <FacebookIcon />
-        </IconButton>
-        <IconButton color="#fbfbfb" href="https://twitter.com">
-          <TwitterIcon />
-        </IconButton>
-        <IconButton color="#fbfbfb" href="https://instagram.com">
-          <InstagramIcon />
-        </IconButton>
-        <IconButton color="#fbfbfb" href="https://linkedin.com">
-          <LinkedInIcon />
-        </IconButton>
       </div>
       <div className="footer-copyright">
         <Typography variant="body2" align="center">

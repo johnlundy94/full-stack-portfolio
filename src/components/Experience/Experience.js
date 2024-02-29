@@ -28,13 +28,13 @@ function Experience() {
         <h1 className="education-title">Education</h1>
         <p className="p-title">UNIVERSITY OF DENVER BOOTCAMP GRADUATE</p>
         <p className="p-content">
-          Developed numerous web applications focusing on JavaScript, CSS, SQL,
+          Developed numerous web applications focusing on React, CSS, SQL,
           NoSQL, Web APIs, and MERN stack.
         </p>
         <p className="p-title">META'S ADVANCED REACT COURSE</p>
         <p className="p-content">
-          Gained a deep understanding of JavaScript’s role in React, component
-          architecture, state management, UI/UX design, and testing.
+          Gained a deep understanding of React, its component architecture and
+          state management.Dove into learning UI/UX design, and testing
         </p>
       </div>
     </div>

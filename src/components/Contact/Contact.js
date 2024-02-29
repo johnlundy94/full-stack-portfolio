@@ -99,7 +99,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <Dialog
         open={openDialog}
         onClose={() => setOpenDialog(false)}
