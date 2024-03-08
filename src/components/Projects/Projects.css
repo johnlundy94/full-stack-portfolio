@@ -1,88 +1,86 @@
-@keyframes fade {
+/* @keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 .projects-container {
-  animation: fade linear both;
+  /* animation: fade linear both;
   animation-timeline: view();
-  animation-range: entry 30% cover 20%;
-    display: grid;
-    grid-template-columns:  1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-column: 2 / span 10;
-    max-width: 100%;
-    padding-top: 100px;
-  }
+  animation-range: entry 30% cover 20%; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-column: 2 / span 10;
+  max-width: 100%;
+  padding-top: 100px;
+}
 
-  .projects-title {
-    padding-bottom: 40px;
-  }
+.projects-title {
+  padding-bottom: 40px;
+}
 
-  .project-image{
-    grid-row: 2;
-    width: 100%; 
-    height: auto;
-    display: block; 
-    margin: 0; 
-    padding: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
+.project-image {
+  grid-row: 2;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
-  .project-card {
-    position: relative;
-  }
+.project-card {
+  position: relative;
+}
 
-  .menu-container {
-    position: absolute;
-    top: 15px; 
-    right: 15px; 
-    z-index: 10; 
-  }  
+.menu-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
 
-  .project-description{
-    text-align: left;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(0, 32, 63, 0.7); 
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px; 
-    padding: 10px;
-    margin-bottom: 40px;
-   
-  }
+.project-description {
+  text-align: left;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 32, 63, 0.7);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
 
-  .project-links{
-    text-align: right;
-  }
+.project-links {
+  text-align: right;
+}
 
-  .website {
-    padding: 20px;
-    color: #def9ed;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .github {
-    padding: 20px;
-    color: #def9ed;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.website {
+  padding: 20px;
+  color: #def9ed;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.github {
+  padding: 20px;
+  color: #def9ed;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .project-text{
-    text-align: left;
-  }
+.project-text {
+  text-align: left;
+}
 
-  @media (min-width: 800px) {
-    .projects-container {
-      grid-column: 4 / span 6;
-    }
-  
+@media (min-width: 800px) {
+  .projects-container {
+    grid-column: 4 / span 6;
   }
+}

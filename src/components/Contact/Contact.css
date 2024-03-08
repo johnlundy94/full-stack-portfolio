@@ -1,16 +1,16 @@
-@keyframes fade {
+/* @keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 .contact-container {
-  animation: fade linear both;
+  /* animation: fade linear both;
   animation-timeline: view();
-  animation-range: entry 40% cover 40%;
+  animation-range: entry 40% cover 40%; */
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr;
