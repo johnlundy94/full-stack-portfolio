@@ -1,16 +1,4 @@
-/* @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 .projects-container {
-  /* animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 30% cover 20%; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
