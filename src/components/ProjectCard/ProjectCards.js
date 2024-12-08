@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -55,9 +55,33 @@ const BasicMenu = ({ github, website }) => {
   );
 };
 
-const Cards = ({ title, description, imageSrc, github, website }) => {
+const Cards = ({ title, description, imageSrc, github, website, index }) => {
+  const cardRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
+  const animationClass = index % 2 === 0 ? "slide-in-left" : "slide-in-right";
+
   return (
-    <div className="project-card">
+    <div
+      className={`project-card ${isVisible ? animationClass : "hidden"}`}
+      ref={cardRef}
+    >
       <div className="menu-container">
         <BasicMenu github={github} website={website} />
       </div>

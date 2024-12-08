@@ -44,9 +44,10 @@ function Projects() {
   return (
     <div className="projects-container" id="projects">
       <h1 className="projects-title">Projects</h1>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <Cards
           key={project.title}
+          index={index}
           title={project.title}
           description={project.description}
           imageSrc={project.getImageSrc()}

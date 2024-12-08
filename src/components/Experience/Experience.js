@@ -1,9 +1,29 @@
+import { useState, useEffect, useRef } from "react";
 import "./Experience.css";
 
 function Experience() {
+  const [isVisible, setIsVisible] = useState(false);
+  const experienceRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (experienceRef.current) {
+      observer.observe(experienceRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="experience-container" id="experience">
-      <div className="skills-content">
+    <div className="experience-container" id="experience" ref={experienceRef}>
+      <div className={`skills-content ${isVisible ? "fade-in" : "hidden"}`}>
         <h1 className="skills-title">Skills</h1>
         <p className="p-title">Front-end</p>
         <p className="p-content">

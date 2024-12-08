@@ -10,10 +10,11 @@ function Hero() {
         src={Headshot}
         sx={{
           zIndex: 1,
-          width: "350px",
-          height: "350px",
+          width: { xs: "200px", sm: "250px", md: "350px" },
+          height: { xs: "200px", sm: "250px", md: "350px" },
           gridColumn: "1 / span 2",
-          gridRow: "1 / span 2",
+          gridRow: "1 / span 3",
+          marginBottom: "60px",
         }}
       />
       <h1 className="hero-title">Hello, I'm John!</h1>

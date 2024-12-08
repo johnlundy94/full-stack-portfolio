@@ -1,16 +1,4 @@
-/* @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 .experience-container {
-  /* animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 40% cover 40%; */
   padding-top: 100px;
   display: grid;
   gap: 3rem;
@@ -57,6 +45,17 @@
   background-color: rgba(0, 32, 63, 0.7);
   border-radius: 8px;
   padding: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY();
 }
 
 @media (max-width: 900px) {

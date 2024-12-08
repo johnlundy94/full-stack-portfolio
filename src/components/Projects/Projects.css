@@ -4,7 +4,7 @@
   grid-template-rows: repeat(6, auto);
   grid-column: 2 / span 10;
   max-width: 100%;
-  padding-top: 100px;
+  padding-top: 250px;
 }
 
 .projects-title {
@@ -37,11 +37,11 @@
   text-align: left;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(0, 32, 63, 0.7);
+  background-color: #1b4c6f;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .project-links {
@@ -65,6 +65,28 @@
 
 .project-text {
   text-align: left;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.5s ease-out;
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease-out;
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease-out;
+}
+
+.project-card.slide-in-left.hidden {
+  transform: translateX(-100%);
 }
 
 @media (min-width: 800px) {

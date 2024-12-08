@@ -34,7 +34,7 @@ const muiTheme = createTheme({
     MuiMenu: {
       styleOverrides: {
         paper: {
-          backgroundColor: "rgba(0, 32, 63, 0.7)",
+          backgroundColor: "#1B4C6F",
         },
       },
     },
