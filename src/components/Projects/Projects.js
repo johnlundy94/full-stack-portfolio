@@ -18,7 +18,7 @@ const projects = [
       "A sleek interface for landscape services, offering design visualization and quote submission with an AWS-powered back-end. Demonstrates understanding in cloud solutions, serverless architecture, and database scalability.",
     getImageSrc: () => require("./vvl.png"),
     github: "https://github.com/johnlundy94/landscape",
-    website: "https://verdantvisionslandscapingadmin.com/",
+    website: "https://www.verdantvisionslandscaping.com/",
   },
   {
     id: 3,

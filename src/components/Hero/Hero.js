@@ -1,10 +1,21 @@
 import "./Hero.css";
-import Headshot from "./clipart-headshot.png";
+import Headshot from "./headshot.jpg";
+import { Avatar } from "@mui/material";
 
 function Hero() {
   return (
     <div className="hero-container">
-      <img src={Headshot} alt="clipart-headshot" className="headshot" />
+      <Avatar
+        alt="John's Headshot"
+        src={Headshot}
+        sx={{
+          zIndex: 1,
+          width: "350px",
+          height: "350px",
+          gridColumn: "1 / span 2",
+          gridRow: "1 / span 2",
+        }}
+      />
       <h1 className="hero-title">Hello, I'm John!</h1>
       <div className="links">
         <a href={"/#projects"}>Projects</a>
