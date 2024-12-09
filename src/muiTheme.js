@@ -63,6 +63,33 @@ const muiTheme = createTheme({
         },
       },
     },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          textAlign: "left",
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
+          backgroundColor: "#1b4c6f",
+          borderRadius: "20px",
+          padding: "10px",
+          color: "#ffffff",
+        },
+      },
+    },
+    MuiDialogTitle: {
+      styleOverrides: {
+        root: {
+          color: "#a8dadc",
+        },
+      },
+    },
+    MuiDialogContentText: {
+      styleOverrides: {
+        root: {
+          color: "#f1faee",
+        },
+      },
+    },
   },
 });
 
