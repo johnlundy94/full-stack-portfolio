@@ -16,11 +16,17 @@ const muiTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          backgroundColor: "#1b4c6f",
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
           color: "#def9ed",
+          borderRadius: "8px",
           fontFamily: '"Anta", sans-serif',
           fontWeight: "400",
           fontStyle: "normal",
-          backgroundColor: "rgba(0, 32, 63, 0.7)",
+          "&:hover": {
+            backgroundColor: "#165376",
+          },
         },
       },
     },
