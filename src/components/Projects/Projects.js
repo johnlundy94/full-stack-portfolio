@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "Verdant Vision Admin",
     description:
-      "A robust SAAS addon to Verdant Visions Landscaping, providing a comprehensive admin dashboard for real-time quote management and client communication. Built with React and Material UI on the front-end, and AWS-powered back-end services for seamless, live interactions. This solution exemplifies expertise in serverless architecture, cloud integration, and efficient client management systems.",
+      "A robust platform addon to Verdant Visions Landscaping, providing a comprehensive admin dashboard for real-time quote management and client communication. Built with React and Material UI on the front-end, and AWS-powered back-end services for seamless, live interactions. This solution exemplifies expertise in serverless architecture, cloud integration, and efficient client management systems.",
     getImageSrc: () => require("./verdant-admin.png"),
     github: "https://github.com/johnlundy94/landscape-admin",
     website: "https://verdantvisionslandscapingadmin.com/",
