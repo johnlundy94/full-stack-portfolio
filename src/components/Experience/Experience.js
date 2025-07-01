@@ -27,13 +27,11 @@ function Experience() {
         <h1 className="skills-title">Skills</h1>
         <p className="p-title">Front-end</p>
         <p className="p-content">
-          React (Hooks, Redux), JavaScript (ES6+), UI/UX Design, Chakra UI,
-          Emotion, Material-UI
+          JavaScript, React, TypeScript, UI/UX, Material-UI, Responsive and
+          Accessible Design
         </p>
         <p className="p-title">Back-end</p>
-        <p className="p-content">
-          AWS Services (SDK), Firebase (Auth, Database)
-        </p>
+        <p className="p-content">AWS Services, Firebase, Node, Express</p>
         <p className="p-title">Testing</p>
         <p className="p-content">
           Jest, React Testing Library, Integration Testing
@@ -46,16 +44,11 @@ function Experience() {
 
       <div className="education-content">
         <h1 className="education-title">Education</h1>
-        <p className="p-title">UNIVERSITY OF DENVER BOOTCAMP GRADUATE</p>
-        <p className="p-content">
-          Developed numerous web applications focusing on React, CSS, SQL,
-          NoSQL, Web APIs, and MERN stack.
+        <p className="p-title">AWS CERTIFIED CLOUD PRACTITIONER</p>
+        <p className="p-title">
+          UNIVERSITY OF DENVER FULL STACK BOOTCAMP GRADUATE
         </p>
-        <p className="p-title">META'S ADVANCED REACT COURSE</p>
-        <p className="p-content">
-          Gained a deep understanding of React, its component architecture and
-          state management.Dove into learning UI/UX design, and testing
-        </p>
+        <p className="p-title">UNIVERSITY OF COLORADO BOULDER</p>
       </div>
     </div>
   );
